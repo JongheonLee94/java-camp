@@ -19,7 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/study2/HelloWorld3.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="855">
@@ -27,6 +27,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/test_02.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -94,8 +103,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -110,6 +119,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/study2/HelloWorld3.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/test_02.html" />
       </list>
     </option>
   </component>
@@ -120,7 +130,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="97" />
     <option name="y" value="197" />
     <option name="width" value="1750" />
@@ -184,6 +194,10 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ismir\IdeaProjects\study2\web" />
+      <recent name="C:\Users\ismir\IdeaProjects\study2\web\WEB-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ismir\IdeaProjects\study2\web\WEB-INF\lib" />
     </key>
@@ -334,12 +348,12 @@
       <updated>1564380818077</updated>
       <workItem from="1564380823663" duration="8496000" />
       <workItem from="1564394186146" duration="1489000" />
-      <workItem from="1564446909607" duration="331000" />
+      <workItem from="1564446909607" duration="1071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10316000" />
+    <option name="totallyTimeSpent" value="11056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -438,6 +452,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test_02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
