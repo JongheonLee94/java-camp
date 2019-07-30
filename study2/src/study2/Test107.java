@@ -12,7 +12,10 @@ public class Test107 {
         StringTokenizer st =new StringTokenizer( l );
         while (st.hasMoreTokens()){
             String tkn = st.nextToken();
-            System.out.println(tkn);
+            System.out.println(tkn.indexOf("해당") != -1);
+            if(tkn.charAt(0) == '#'){
+                System.out.println(tkn);
+            }
         }
     }
 }
