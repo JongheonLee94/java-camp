@@ -21,7 +21,7 @@ public class FormTestServlet extends HttpServlet {
             checkbox 는 체크후에 넘기면 value 에 지정된 값이 읽혀지고
             체크 없이 넘기면 null 값을 읽게 된다.
          */
-  
+
         String gul = req.getParameter("gul");
         System.out.println("gul:" + gul);
 
@@ -38,6 +38,9 @@ public class FormTestServlet extends HttpServlet {
 
         String content = req.getParameter("content");
         System.out.println("content: " +content);
+
+        String fruit = req.getParameter("fruit");
+        System.out.println("fruit: " +fruit);
 
 
         res.sendRedirect("/study2/test_02.html");

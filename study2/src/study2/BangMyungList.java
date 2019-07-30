@@ -10,17 +10,15 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HelloWorld3 extends HttpServlet {
+public class BangMyungList extends HttpServlet {
     @Override
-    public void service(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        if (true) {
+    protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
             String date = "";
             List<BangMyungVO> ls = new ArrayList<BangMyungVO>();
 
             try {
                 Class.forName("oracle.jdbc.driver.OracleDriver");
-                Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE", "HR", "HR");
+                Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:orcl", "HR", "HR");
                 Statement stmt = conn.createStatement();
             /*
                 TABLE => class
@@ -29,7 +27,7 @@ public class HelloWorld3 extends HttpServlet {
              */
                 String sql = "SELECT no,gul,the_time FROM bangmyung_t";
                 ResultSet rs = stmt.executeQuery(sql);
-                response.setContentType("text/html;charset=euc-kr");
+                res.setContentType("text/html;charset=euc-kr");
                 while (rs.next()) {
                     BangMyungVO vo = new BangMyungVO();
                     vo.setNo(rs.getInt("no"));
@@ -49,7 +47,7 @@ public class HelloWorld3 extends HttpServlet {
 
 
             System.out.println("HelloWorld3");
-            PrintWriter out = response.getWriter();
+            PrintWriter out = res.getWriter();
             out.println("<html>");
             out.println("   <body>");
             out.println("       <table border =\"0\" cellspacing = \"2\" cellpadding = \"12\">");
@@ -68,34 +66,13 @@ public class HelloWorld3 extends HttpServlet {
                 out.println("           </tr>");
             }
             out.println("       </table>");
+
+
+            out.println("<form method=\"POST\" action=\"bangmyung_add2\">\n" +
+                    "    <input type=\"text\" size =50/><input type=\"submit\"/>\n" +
+                    "</form>\n");
             out.println("   </body>");
             out.println("</html>");
             out.close();
-        }else {
-            System.out.println("구구단");
-            PrintWriter out = response.getWriter();
-            String gugu = "";
-
-            out.println("<html>");
-            out.println("   <body>");
-            out.println("   <table>");
-
-            for (int i = 1; i < 11; i++) {
-                out.println("       <tr>");
-                for (int j = 1; j < 11; j++) {
-                    String r= Integer.toHexString((int)(Math.random()*255));
-                    String g= Integer.toHexString((int)(Math.random()*255));
-                    String b= Integer.toHexString((int)(Math.random()*255));
-                    out.println("           <td bgColor =\"" +r+g+b+"\">" + j + "x" + i + "= " + i * j + "</td>");
-                }
-                out.println("\n");
-                out.println("       </tr>");
-            }
-            out.println("   </table>");
-            out.println("   </body>");
-            out.println("</html>");
-            out.close();
-
-        }
     }
 }
