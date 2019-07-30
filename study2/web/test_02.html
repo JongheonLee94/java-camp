@@ -5,8 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+<!--
+    submit 을 누르면 , action 에 지정된 페이지를 요청한다.
+    form 안의 input 에 입력돤정보를 물고 간다.
+    이 정보는 요청받은 서블릿의 request.getParameter 로 추출한다.
+
+    name 에 저장된 값을 키값으로 사용한다.
+-->
 <form method="POST" action="form_test2">
     <input type="text" name="gul" size="50">
+
+    <input type="checkbox" name="abcd" value="apple">
+    <input type="checkbox" name="xyzz" value="banana">
+
     <input type="submit">
 </form>
 
