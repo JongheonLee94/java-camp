@@ -20,6 +20,6 @@
 
     <servlet-mapping>
         <servlet-name>abcd2</servlet-name>
-        <url-pattern>/form_test</url-pattern>
+        <url-pattern>/form_test2</url-pattern>
     </servlet-mapping>
 </web-app>

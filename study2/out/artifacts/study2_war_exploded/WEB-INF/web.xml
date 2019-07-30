@@ -13,4 +13,13 @@
         <url-pattern>/study2</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>abcd2</servlet-name>
+        <servlet-class>study2.FormTestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>abcd2</servlet-name>
+        <url-pattern>/form_test2</url-pattern>
+    </servlet-mapping>
 </web-app>
