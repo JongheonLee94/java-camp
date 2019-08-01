@@ -1,4 +1,4 @@
-package study2;
+package main;
 
 import java.util.StringTokenizer;
 
